@@ -367,6 +367,7 @@ function init(SETTINGS) {
     widgets["stats"],
     widgets["pagination"],
     widgets["refine_previousplayers"],
+	widgets["refine_tags"],
     widgets["refine_numplays"]
   ]);
 
