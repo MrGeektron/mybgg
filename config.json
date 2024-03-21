@@ -6,7 +6,9 @@
     "boardgamegeek": {
         "user_name": "Geektron",
         "extra_params": {
-            "own": 1
+            "own": 1,
+            "wishlist": 1,
+            "want_to_play": 1
         }
     },
     "algolia": {
