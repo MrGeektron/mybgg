@@ -205,6 +205,15 @@ function get_widgets(SETTINGS) {
         showMore: true,
       }
     ),
+    "refine_tags": panel('Tags')(instantsearch.widgets.refinementList)(
+      {
+        container: '#facet-tags',
+        attribute: 'tags',
+        operator: 'and',
+        searchable: true,
+        showMore: true,
+      }
+    ),
     "refine_numplays": panel('Total plays')(instantsearch.widgets.numericMenu)(
       {
         container: '#facet-numplays',
