@@ -13,7 +13,7 @@
         "app_id": "BQE97BQ9EN",
         "api_key_search_only": "59200b30ca5af7d262d94ecd7584230a",
         "index_name": "Board Game Collection",
-        "hits_per_page": 24,
+        "hits_per_page": 50,
         "sort_by": "asc(name)"
     }
 }
