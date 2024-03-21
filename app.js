@@ -110,7 +110,9 @@ function get_widgets(SETTINGS) {
   const TAGS = [
     'own',
     'wishlist',
-    'wanttoplay'
+    'wanttoplay',
+	'prevowned',
+	'wanttobuy'
   ];
 
   function panel(header) {
