@@ -106,6 +106,12 @@ function get_widgets(SETTINGS) {
     '3-4h',
     '> 4h'
   ];
+  
+  const TAGS = [
+    'own',
+    'wishlist',
+    'wanttoplay'
+  ];
 
   function panel(header) {
     return instantsearch.widgets.panel(
@@ -207,11 +213,10 @@ function get_widgets(SETTINGS) {
     ),
     "refine_tags": panel('Tags')(instantsearch.widgets.refinementList)(
       {
-        container: '#facet-tags',
-        attribute: 'tags',
-        operator: 'and',
-        searchable: true,
-        showMore: true,
+        container: '#facet-playing-time',
+        attribute: 'playing_time',
+        operator: 'or',
+        sortBy: function(a, b){ return PLAYING_TIME_ORDER.indexOf(a.name) - PLAYING_TIME_ORDER.indexOf(b.name); },
       }
     ),
     "refine_numplays": panel('Total plays')(instantsearch.widgets.numericMenu)(
