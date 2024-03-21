@@ -213,10 +213,10 @@ function get_widgets(SETTINGS) {
     ),
     "refine_tags": panel('Tags')(instantsearch.widgets.refinementList)(
       {
-        container: '#facet-playing-time',
-        attribute: 'playing_time',
+        container: '#facet-tags',
+        attribute: 'tags',
         operator: 'or',
-        sortBy: function(a, b){ return PLAYING_TIME_ORDER.indexOf(a.name) - PLAYING_TIME_ORDER.indexOf(b.name); },
+        sortBy: function(a, b){ return TAGS.indexOf(a.name) - TAGS.indexOf(b.name); },
       }
     ),
     "refine_numplays": panel('Total plays')(instantsearch.widgets.numericMenu)(
