@@ -6,10 +6,30 @@
     "boardgamegeek": {
         "user_name": "Geektron",
         "extra_params": {
-            "own": 1,
-            "wishlist": 1,
-            "want_to_play": 1
+			"prevowned": 0
         }
+	},
+    "boardgamegeek_own": {
+        "user_name": "Geektron",
+        "extra_params": {
+			"own": 1,
+			"prev_own": 0
+        }
+	},
+    "boardgamegeek_wishlist": {
+        "user_name": "Geektron",
+        "extra_params": {
+			"wishlist": 1,
+			"prev_own": 0
+        }
+	},
+    "boardgamegeek_want_to_play": {
+        "user_name": "Geektron",
+        "extra_params": {
+			"want_to_play": 1,
+			"prev_own": 0
+        }
+	
     },
     "algolia": {
         "app_id": "BQE97BQ9EN",
