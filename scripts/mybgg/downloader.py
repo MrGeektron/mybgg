@@ -18,6 +18,11 @@ class Downloader():
                 debug=debug,
             )
 
+    def addCollection(self, previousCollection, newCollection):
+        for game in newCollection:
+            previousCollection.append(game)
+        return previousCollection
+    
     def collection(self, user_name, extra_params):
         collection_data = []
         plays_data = []
