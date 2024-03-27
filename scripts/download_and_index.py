@@ -12,6 +12,20 @@ def main(args):
         cache_bgg=args.cache_bgg,
         debug=args.debug,
     )
+ #   collection_own = downloader.collection(
+ #       user_name=SETTINGS["boardgamegeek_own"]["user_name"],
+ #       extra_params=SETTINGS["boardgamegeek_own"]["extra_params"],
+ #   )
+ #   collection_wishlist = downloader.collection(
+ #       user_name=SETTINGS["boardgamegeek_wishlist"]["user_name"],
+ #       extra_params=SETTINGS["boardgamegeek_wishlist"]["extra_params"],
+ #   )
+ #   collection_want_to_play = downloader.collection(
+ #       user_name=SETTINGS["boardgamegeek_want_to_play"]["user_name"],
+ #       extra_params=SETTINGS["boardgamegeek_want_to_play"]["extra_params"],
+ #   )
+ #   collection = downloader.addCollection(collection_own, collection_wishlist)
+ #   collection = downloader.addCollection(collection, collection_want_to_play)
     collection = downloader.collection(
         user_name=SETTINGS["boardgamegeek"]["user_name"],
         extra_params=SETTINGS["boardgamegeek"]["extra_params"],
